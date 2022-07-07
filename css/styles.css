@@ -1,0 +1,91 @@
+/******************************************
+/* CSS
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Manrope:wght@400;800&family=Playfair+Display&family=Sora:wght@200&family=Tangerine:wght@700&family=Titan+One&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: hsl(217, 19%, 24%);
+  color: white;
+  border-radius: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+button {
+  display: block;
+  background-color: #52ffa8;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  bottom: -30px;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #52ffa8;
+  box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
+  transform: rotate(360deg);
+  transition: transform 1s;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+.divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20px;
+}
+
+h3 {
+  color: hsl(150, 100%, 66%);
+}
+
+.rotate {
+  transition: transform 0.5s ease-in;
+  transform-origin: 0% 0%;
+}
+
+.quote {
+  font-size: 28px;
+}
