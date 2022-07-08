@@ -106,7 +106,7 @@ h3 {
 @media (max-width: 600px) {
   section {
     display: flex;
-    width: 400px;
+    width: 350px;
   }
 
   .desktop-divider {
