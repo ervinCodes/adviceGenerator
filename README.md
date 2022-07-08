@@ -79,6 +79,19 @@ function rotate() {
   btn.classList.add('onclick');
 }
   }
+  
+function getFetch() {
+  const url = `https://api.adviceslip.com/advice/${generateRandomID()}`;
+
+  fetch(url)
+    .then(res => res.json()) // parse response as JSON
+    .then(data => {
+      console.log(data);
+      document.querySelector('h3').innerText = `advice #${data.slip.id}`;
+      document.querySelector('p').innerText = `"${data.slip.advice}"`;
+      btn.classList.remove('onclick'); // class removed after fetch occurs
+    })
+```
 
 ```css
 .onclick {
@@ -92,12 +105,12 @@ function rotate() {
 
 ### Continued development
 
-As I do more projects, I want to be able to type less code to avoid the DRY principle (Dont Repeat Yourself).  In this project I could have created a single function that fetched data on page load and on a click event, however I was not able to solve this issue.
+As I do more projects, I want to be able to type less code to avoid repeating code.  In this project I could have created a single function that fetched data on page load and on a click event, however I was not able to solve this issue.
 
 ## Author
 
 - Website - [Ervin Natareno](https://www.dev-ervin.netlify.app)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ervn12)
+- Frontend Mentor - [@ervn12](https://www.frontendmentor.io/profile/ervn12)
 - Twitter - [@ervn](https://www.twitter.com/ervn_)
 
 
