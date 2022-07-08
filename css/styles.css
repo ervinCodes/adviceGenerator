@@ -100,7 +100,7 @@ h3 {
   background-color: #52ffa8;
   box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
   transform: rotate(360deg);
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 @media (max-width: 600px) {
