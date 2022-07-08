@@ -1,13 +1,21 @@
 'use strict';
 
+const btn = document.querySelector('.image');
+
 document.querySelector('button').addEventListener('click', getFetch);
 
-// function generateRandomID() {
-//   return Math.floor(Math.random() * 244) + 1;
-// }
+function generateRandomID() {
+  return Math.floor(Math.random() * 244) + 1;
+}
+
+document.querySelector('.image').addEventListener('click', rotate);
+
+function rotate() {
+  btn.classList.add('onclick');
+}
 
 function getFetch() {
-  const url = `https://api.adviceslip.com/advice`;
+  const url = `https://api.adviceslip.com/advice/${generateRandomID()}`;
 
   fetch(url)
     .then(res => res.json()) // parse response as JSON

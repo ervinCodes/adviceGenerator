@@ -63,6 +63,8 @@ button:hover {
   transition: transform 1s;
 }
 
+
+
 button:active {
   transform: scale(0.9);
 }
@@ -88,4 +90,12 @@ h3 {
 
 .quote {
   font-size: 28px;
+}
+
+.onclick {
+  cursor: pointer;
+  background-color: #52ffa8;
+  box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
