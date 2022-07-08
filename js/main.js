@@ -1,6 +1,6 @@
 'use strict';
 
-const btn = document.querySelector('.image');
+let btn = document.querySelector('.image');
 
 document.querySelector('button').addEventListener('click', getFetch);
 
@@ -23,6 +23,7 @@ function getFetch() {
       console.log(data);
       document.querySelector('h3').innerText = `advice #${data.slip.id}`;
       document.querySelector('p').innerText = `"${data.slip.advice}"`;
+      btn.classList.remove('onclick');
     })
     .catch(err => {
       console.log(`error ${err}`);

@@ -11,10 +11,7 @@
 /******************************************
   /* LAYOUT
   /*******************************************/
-img {
-  display: block;
-  margin: 0 auto;
-}
+
 
 body {
   background-color: hsl(218, 23%, 16%);
@@ -36,10 +33,9 @@ section {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 100px;
 }
 
 button {
@@ -63,8 +59,6 @@ button:hover {
   transition: transform 1s;
 }
 
-
-
 button:active {
   transform: scale(0.9);
 }
@@ -83,6 +77,14 @@ h3 {
   color: hsl(150, 100%, 66%);
 }
 
+.mobile-divider {
+  display: none;
+}
+
+.desktop-divider {
+  display: flex;
+}
+
 .rotate {
   transition: transform 0.5s ease-in;
   transform-origin: 0% 0%;
@@ -90,6 +92,7 @@ h3 {
 
 .quote {
   font-size: 28px;
+  padding-bottom: 0;
 }
 
 .onclick {
@@ -98,4 +101,20 @@ h3 {
   box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
   transform: rotate(360deg);
   transition: transform 1s;
+}
+
+@media (max-width: 600px) {
+  section {
+    display: flex;
+    width: 400px;
+  }
+
+  .desktop-divider {
+    display: none;
+  }
+
+  .mobile-divider {
+    display: flex;
+  }
+  }
 }
