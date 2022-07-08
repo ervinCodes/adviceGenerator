@@ -1,15 +1,17 @@
 'use strict';
 
+// Button element created
 let btn = document.querySelector('.image');
 
 document.querySelector('button').addEventListener('click', getFetch);
 
 function generateRandomID() {
-  return Math.floor(Math.random() * 244) + 1;
+  return Math.floor(Math.random() * 224) + 1;
 }
 
 document.querySelector('.image').addEventListener('click', rotate);
 
+// Adds class to rotate button onclick
 function rotate() {
   btn.classList.add('onclick');
 }
@@ -23,7 +25,7 @@ function getFetch() {
       console.log(data);
       document.querySelector('h3').innerText = `advice #${data.slip.id}`;
       document.querySelector('p').innerText = `"${data.slip.advice}"`;
-      btn.classList.remove('onclick');
+      btn.classList.remove('onclick'); // removes class on fetch
     })
     .catch(err => {
       console.log(`error ${err}`);
