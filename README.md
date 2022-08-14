@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/active-states.jpg)
+![](https://media.giphy.com/media/jJUBGKPjU1yUjVhiIn/giphy.gif)
 
 ### Links
 
@@ -105,8 +105,31 @@ function getFetch() {
 
 As I do more projects, I want to be able to type less code to avoid repeating code. In this project I could have created a single function that fetched data on page load and on a click event, however I was not able to solve this issue.
 
-## Author
+## Links to my other projects
 
-- Website - [Ervin Natareno](https://www.dev-ervin.netlify.app)
-- Frontend Mentor - [@ervn12](https://www.frontendmentor.io/profile/ervn12)
-- Twitter - [@ervn](https://www.twitter.com/ervn_)
+<table bordercolor="#66b2b2">
+  
+  <tr>
+    <td width="33.3%"  style="align:center;" valign="top">
+        <a target="_blank" href="https://github.com/ervn12/pigGame">Pig Game</a>
+        <br />
+      <a target="_blank" href="https://github.com/ervn12/pigGame">
+            <img src="https://media.giphy.com/media/80JowPrkqn9KpYS0aC/giphy.gif" width="100%"  alt="A Pig Game"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+        <a target="_blank" href="https://github.com/ervn12/timeTrackingDashboard"> Time Tracking Dashboard</a>
+        <br />
+        <a target="_blank" href="https://github.com/ervn12/timeTrackingDashboard">
+          <img src="https://media.giphy.com/media/cGPivDzfcz7K1LPDXz/giphy.gif" width="100%" alt="Matching Card Game"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+        <a target="_blank" href="https://github.com/ervn12/star-trek-CLIENT">Star Trek - A Field Guide to Aliens</a>
+        <br />
+        <a target="_blank" href="https://github.com/ervn12/star-trek-CLIENT">
+          <img src="https://media.giphy.com/media/txG49WSDMlTnZ0QXYe/giphy.gif" width="100%" alt="Portfolio"/>
+        </a>
+    </td>
+  </tr>
+</table>
