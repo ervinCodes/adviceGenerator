@@ -52,7 +52,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/active-states.jpg)
+![](https://media.giphy.com/media/jJUBGKPjU1yUjVhiIn/giphy.gif)
 
 ### Links
 
